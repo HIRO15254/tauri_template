@@ -37,12 +37,12 @@ export const MainPage = () => {
         className="row"
         onSubmit={(e) => {
           e.preventDefault();
-          greet();
+          void greet();
         }}
       >
         <input
           id="greet-input"
-          onChange={(e) => setName(e.currentTarget.value)}
+          onChange={(e) => { setName(e.currentTarget.value); }}
           placeholder="Enter a name..."
         />
         <button type="submit">Greet</button>
