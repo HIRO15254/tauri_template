@@ -29,6 +29,8 @@ export const MainPage = () => {
         </a>
       </div>
 
+      <a href="/router-test">testPage</a>
+
       <p>Click on the Tauri, Vite, and React logos to learn more.</p>
 
       <form
