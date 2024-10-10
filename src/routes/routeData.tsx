@@ -12,3 +12,5 @@ export const routeData = [
     Component: RouterTestPage
   }
 ] as const satisfies RouteProps[];
+
+// type RoutePath = typeof routeData[number]["path"];

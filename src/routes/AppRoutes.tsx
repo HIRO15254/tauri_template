@@ -1,5 +1,5 @@
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import {routeData} from "./routeData.ts";
+import {routeData} from "./routeData.tsx";
 
 export const AppRoutes = () => {
   return (

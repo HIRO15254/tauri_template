@@ -2,6 +2,7 @@ import tseslint from 'typescript-eslint';
 
 export default tseslint.config(
   {
+    ignores: ["*.stories.tsx"],
     files: ["src/**/*.ts", "src/**/*.tsx"],
     rules: {
       "@typescript-eslint/no-floating-promises": "warn",
