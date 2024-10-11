@@ -13,4 +13,4 @@ export const routeData = [
   }
 ] as const satisfies RouteProps[];
 
-// type RoutePath = typeof routeData[number]["path"];
+export type RoutePath = typeof routeData[number]["path"];

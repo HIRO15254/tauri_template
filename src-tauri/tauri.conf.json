@@ -13,8 +13,8 @@
     "windows": [
       {
         "title": "tauri_template",
-        "width": 800,
-        "height": 600
+        "maximized": true,
+        "resizable": true
       }
     ],
     "security": {

@@ -12,6 +12,7 @@ import {
 import {Icon, IconChevronLeft, IconProps} from '@tabler/icons-react';
 
 import classes from "./LinksGroup.module.css"
+import {RoutePath} from "~/routes/routeData.tsx";
 
 interface LinksProps {
   Icon: React.ForwardRefExoticComponent<IconProps & React.RefAttributes<Icon>>;
@@ -20,7 +21,7 @@ interface LinksProps {
   onClick?: () => void;
   link: {
     label: string;
-    link: string;
+    link: RoutePath;
   }[];
 }
 
@@ -75,7 +76,7 @@ interface LinkProps {
   Icon: React.ForwardRefExoticComponent<IconProps & React.RefAttributes<Icon>>;
   label: string;
   onClick?: () => void;
-  link: string;
+  link: RoutePath;
 }
 
 const SingleLink = (props: LinkProps) => {
@@ -97,9 +98,9 @@ const SingleLink = (props: LinkProps) => {
   );
 };
 
-type Props = LinksProps | LinkProps;
+export type LinksGroupProps = LinksProps | LinkProps;
 
-export const LinksGroup: React.FC<Props> = props => {
+export const LinksGroup: React.FC<LinksGroupProps> = props => {
   const {link, ...other} = props;
   const isLinks = Array.isArray(link);
 

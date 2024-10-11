@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {invoke} from "@tauri-apps/api/core";
-import {Anchor, Button, Input, Text, Title} from "@mantine/core";
+import {Anchor, Button, Container, Input, Text, Title} from "@mantine/core";
 
 export const MainPage: React.FC = () => {
   const [greetMsg, setGreetMsg] = useState("");
@@ -12,7 +12,7 @@ export const MainPage: React.FC = () => {
   }
 
   return (
-    <div>
+    <Container>
       <Title order={1}>Welcome to Tauri!</Title>
       <Anchor href="/router-test">testPage</Anchor>
       <Text>lorem ipsum </Text>
@@ -32,6 +32,6 @@ export const MainPage: React.FC = () => {
       </form>
 
       <Text>{greetMsg}</Text>
-    </div>
+    </Container>
   )
 }
